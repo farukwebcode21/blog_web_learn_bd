@@ -1,4 +1,8 @@
 @extends('frontend.layouts.master')
+@section('page_title', 'Welcome')
+@section('banner')
+  @include('frontend.includes.banner')
+@endsection
 
 @section('content')
 <div class="col-lg-12">

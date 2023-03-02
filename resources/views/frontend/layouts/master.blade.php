@@ -1,35 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    @include('frontend.includes.head')
-  </head>
+<head>
+  @include('frontend.includes.head')
+</head>
 
-  <body>
-    <!-- Header -->
-    @include('frontend.includes.nav')
-    <!-- Banner Starts Here -->
-    @include('frontend.includes.banner')
-    <!-- Banner Ends Here -->
-    <section class="blog-posts">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8">
-            <div class="all-blog-posts">
-              <div class="row">
-               @yield('content')
-              </div>
+<body>
+  <!-- Header -->
+  @include('frontend.includes.nav')
+  <!-- Banner Starts Here -->
+  @yield('banner')
+  <!-- Banner Ends Here -->
+  <section class="blog-posts">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8">
+          <div class="all-blog-posts">
+            <div class="row">
+              @yield('content')
             </div>
           </div>
-          @include('frontend.includes.sidebar')
         </div>
+        @include('frontend.includes.sidebar')
       </div>
-    </section>
-    @include('frontend.includes.footer')
+    </div>
+  </section>
+  @include('frontend.includes.footer')
 
-    <!-- Bootstrap core JavaScript -->
-    @include('frontend.includes.script')
+  <!-- Bootstrap core JavaScript -->
+  @include('frontend.includes.script')
 
 
-  </body>
+</body>
+
 </html>
